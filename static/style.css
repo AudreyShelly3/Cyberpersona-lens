@@ -1,0 +1,129 @@
+/* --- GLOBAL DARK THEME --- */
+body {
+    font-family: Arial, sans-serif;
+    background: #0f1520;
+    color: #e0e6f0;
+    padding: 40px;
+}
+
+.container {
+    background: #1a2332;
+    padding: 30px;
+    width: 500px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+}
+
+/* TITLES */
+.title {
+    text-align: center;
+    font-size: 2rem;
+    color: #7db9ff;
+}
+.subtitle {
+    text-align: center;
+    color: #9eb8d1;
+    margin-bottom: 20px;
+}
+
+/* FORM */
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    background: #0e1724;
+    color: #cde1ff;
+}
+
+button {
+    padding: 12px 20px;
+    background: #0078ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    background: #2994ff;
+}
+
+/* RESULT BOX */
+#results {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* RISK BAR */
+#riskBarContainer {
+    width: 100%;
+    height: 18px;
+    background: #273142;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+#riskBar {
+    height: 18px;
+    width: 0%;
+    border-radius: 8px;
+    transition: width 1.5s ease;
+}
+
+/* GLOW EFFECTS */
+.risk-low {
+    background: #2ecc71;
+    box-shadow: 0 0 12px #2ecc71;
+}
+.risk-medium {
+    background: #f1c40f;
+    box-shadow: 0 0 12px #f1c40f;
+}
+.risk-high {
+    background: #e74c3c;
+    box-shadow: 0 0 12px #e74c3c;
+}
+
+/* PERSONA BOX */
+#personaBox {
+    background: #111a27;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    color: #d5e2f7;
+    border-left: 4px solid #4c8dff;
+}
+
+/* LIST STYLING */
+#breachList li {
+    margin-bottom: 6px;
+    padding: 6px;
+    background: #121b28;
+    border-radius: 6px;
+    list-style: none;
+}
+
+/* ANIMATIONS */
+.fade-in {
+    animation: fadein 1s ease forwards;
+    opacity: 0;
+}
+.fade-in-slow {
+    animation: fadein 1.5s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadein {
+    to { opacity: 1; }
+}

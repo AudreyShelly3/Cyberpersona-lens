@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CyberPersona Lens</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1 class="title">CyberPersona Lens</h1>
+    <p class="subtitle">Analyse your digital footprint</p>
+
+    <form id="lookupForm" class="fade-in">
+        <input type="email" id="email" name="email" placeholder="Enter your email…" required>
+        <button type="submit">Scan Exposure</button>
+    </form>
+
+    <div id="results" class="hidden fade-in-slow">
+        <h2>Your Exposure Report</h2>
+
+        <p><strong>Email:</strong> <span id="emailOut"></span></p>
+        <p><strong>Breach Count:</strong> <span id="breachCount"></span></p>
+
+        <p><strong>Risk Score:</strong>
+            <span id="riskScore"></span>
+            <span id="riskLabel"></span>
+        </p>
+
+        <div id="riskBarContainer">
+            <div id="riskBar"></div>
+        </div>
+
+        <h3>Breach Details</h3>
+        <ul id="breachList"></ul>
+
+        <h3>Cyber Persona Summary</h3>
+        <div id="personaBox"></div>
+    </div>
+</div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
